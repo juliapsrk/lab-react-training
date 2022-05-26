@@ -1,12 +1,25 @@
 // Iteration 2
 
 const Greetings = (props) => {
+  let greeting;
+  switch (props.lang) {
+    case 'en':
+      greeting = 'Hello';
+      break;
+    case 'es':
+      greeting = 'Hola';
+      break;
+    case 'de':
+      greeting = 'Hallo';
+      break;
+    case 'fr':
+      greeting = 'Bonjour';
+      break;
+    default:
+  }
   return (
-    <div>
-      <p>{props.lang === 'de' ? 'Hallo' : null}</p>
-      <p>{props.lang === 'fr' ? 'Bonjour' : null}</p>
-      <p>{props.lang === 'en' ? 'Hello' : null}</p>
-      <p>{props.lang === 'es' ? 'Hola' : null}</p>
+    <div className="greetings">
+      {greeting} {props.children}
     </div>
   );
 };

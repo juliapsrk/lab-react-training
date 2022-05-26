@@ -1,11 +1,12 @@
 // Iteration 3
 
-const selectRandom = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1) + min);
-};
-
 const Random = (props) => {
-  return <h1>{selectRandom(props.min, props.max)}</h1>;
+  return (
+    <div className="random">
+      Random value between {props.min} and {props.max} =&gt;(' ')
+      {Math.floor(Math.random() * (props.max - props.min) + props.min)}
+    </div>
+  );
 };
 
 export default Random;

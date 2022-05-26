@@ -12,6 +12,69 @@ code {
     monospace;
 }
 
-.idCard {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+.id-card {
+  display: flex;
+  gap: 0.5em;
+  border: 1px solid black;
+  padding: 0.25em;
+  margin: 1em;
 }
+
+/* .id-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+} */
+
+/* best practice: create one JSX and one CSS file per component 
+inside the components folder, import './IdCard.css' */
+
+.greetings,
+.random,
+.box-color,
+.driver-card {
+  border: 1px solid black;
+  padding: 0.25em;
+  margin: 1em;
+}
+
+.driver-card {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+}
+
+.driver-card img {
+  width: 4em;
+  height: 4em;
+  border-radius: 2em;
+}
+
+/* .like-button {
+}
+
+.clickable-picture {
+} */
+
+/* .dice {
+}
+
+.carousel {
+}
+
+.numbers-table {
+}
+
+.facebook-simple {
+}
+
+.facebook-advanced {
+}
+
+.signup-page {
+}
+
+.rgb-color-picker {
+} */
