@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import React from 'react';
 import './App.css';
 import IdCard from './components/IdCard';
 import Greetings from './components/Greetings';
@@ -15,7 +13,9 @@ import ClickablePicture from './components/ClickablePicture';
 // import NumbersTable from './components/NumbersTable';
 // import FaceBook from './components/FaceBook';
 // import SignupPage from './components/SignupPage';
-// import SingleColorPicker from './components/SingleColorPicker';
+import SingleColorPicker from './components/SingleColorPicker';
+import RGBColorPicker from './components/RGBColorPicker';
+import ColorSquare from './components/ColorSquare';
 
 function App() {
   return (
@@ -165,9 +165,20 @@ function App() {
         <SignupPage />
       </div>
 
+ 
+
+      */}
       <div>
         <SingleColorPicker />
-      </div> */}
+      </div>
+
+      <div>
+        <RGBColorPicker />
+      </div>
+
+      <div>
+        <ColorSquare />
+      </div>
     </div>
   );
 }
